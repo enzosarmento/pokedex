@@ -40,7 +40,7 @@ export default {
     },
     watch: {
     searchPokemon(newValue) {
-      this.list = this.pokemons.filter(pokemon => pokemon.name.match(newValue))
+      this.list = this.pokemons.filter(pokemon => pokemon.name.match(newValue.toLowerCase()))
     },
   }
 
